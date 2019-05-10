@@ -1,0 +1,17 @@
+.contact {
+    padding-bottom: 4rem;
+    text-transform: uppercase;
+    background: $bg-section;
+
+    &__h2 {
+        padding-top: 0.25rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.4em;
+    }
+
+    &__p {
+        margin-bottom: 0;
+        line-height: 1.4em;
+        color: $color-grey;
+    }
+}

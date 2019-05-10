@@ -1,3 +1,5 @@
+import 'bootstrap';
+
 import './styles/main.scss';
 
 import './images/logo.png';
@@ -6,5 +8,8 @@ import './images/service_2.png';
 import './images/service_3.png';
 import './images/service_4.png';
 import './images/reference.png';
+import './images/marker.png';
+import './images/mail.png';
+import './images/phone.png';
 
 import './scripts/carousel';
