@@ -2,8 +2,10 @@ $color-grey: #505050 !default;
 $color-grey-2: #525252 !default;
 $color-p: #848484 !default;
 
-$bg-section: #fbfbf3 !default;
+$bg-section: #fbfaf5 !default;
 $bg-purple: #6c1ed6 !default;
+$bg-top-footer: #153146 !default;
+$bg-bottom-footer: #010522 !default;
 
 $white: #ffffff !default;
 
@@ -16,6 +18,3 @@ $breakpoints: (
 
 $primary-font: 'Roboto Condensed', sans-serif !default;
 $secondary-font: 'Maven Pro', sans-serif !default;
-
-$bg-top-footer: #153146 !default;
-$bg-bottom-footer: #010522 !default;

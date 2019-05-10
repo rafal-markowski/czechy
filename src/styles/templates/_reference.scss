@@ -1,0 +1,91 @@
+.reference {
+    padding: 4rem 0;
+    background: $bg-section;
+
+    &__h2 {
+        position: relative;
+        padding-bottom: 0.5rem;
+        margin-bottom: 2rem;
+        text-transform: none;
+
+        &::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: $color-grey-2;
+            content: '';
+        }
+    }
+
+    &__slider {
+        min-height: 300px;
+    }
+
+    &__slide {
+        position: relative;
+    }
+
+    &__content {
+        padding: 3rem 5rem;
+        background: $white;
+    }
+
+    &__arrow {
+        position: absolute;
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background: $bg-purple;
+
+        &--prev {
+            bottom: -25px;
+            left: 15px;
+
+            @include media-up(lg) {
+                top: calc(50% - 30px);
+                left: calc(100% - 25px);
+            }
+        }
+
+        &--next {
+            bottom: -25px;
+            right: 15px;
+
+            @include media-up(lg) {
+                top: calc(50% + 30px);
+                left: calc(100% - 25px);
+            }
+        }
+    }
+
+    &__icon {
+        width: 15px;
+    }
+
+    &__photo {
+        height: 250px;
+        background: url('../images/reference.png') no-repeat center;
+        background-size: cover;
+
+        @include media-up(lg) {
+            min-height: 300px;
+            height: auto;
+        }
+    }
+
+    &__p {
+        font-style: italic;
+    }
+
+    &__span {
+        display: block;
+        line-height: 100%;
+        color: $color-grey;
+        font-family: $primary-font;
+    }
+}
