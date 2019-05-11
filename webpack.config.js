@@ -1,4 +1,9 @@
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
     entry: './src/index.js',
@@ -6,7 +11,20 @@ module.exports = {
         path: __dirname + '/dist',
         filename: 'index_bundle.js'
     },
+    optimization: {
+        minimizer: [
+            new UglifyJsPlugin({
+                cache: true,
+                parallel: true,
+                sourceMap: false
+            }),
+            new OptimizeCSSAssetsPlugin({})
+        ]
+    },
     plugins: [
+        new MiniCssExtractPlugin({
+            filename: 'styles/[name].css'
+        }),
         new HtmlWebpackPlugin({
             template: 'src/templates/index.html'
         })
@@ -14,11 +32,11 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.scss$/,
+                test: /\.s?[ac]ss$/,
                 use: [
-                    "style-loader",
-                    "css-loader",
-                    "sass-loader"
+                    MiniCssExtractPlugin.loader,
+                    { loader: 'css-loader', options: { url: false, sourceMap: false } },
+                    { loader: 'sass-loader', options: { sourceMap: false } }
                 ]
             },
             {
@@ -45,6 +63,7 @@ module.exports = {
         ]
     },
     devServer: {
+        host: '0.0.0.0',
         port: 8080,
         proxy: {
             'images/*': {
@@ -53,5 +72,6 @@ module.exports = {
                 changeOrigin: true
             } 
         }
-    }
+    },
+    mode: devMode ? 'development' : 'production'
 };
