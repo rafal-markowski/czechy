@@ -1,11 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
 
 @import 'variables';
-@import 'global';
 
 @import 'mixins/media';
 @import 'mixins/setXY';
 
+@import 'global';
 @import 'templates/top-nav';
 @import 'templates/hero';
 @import 'templates/services';
