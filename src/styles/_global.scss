@@ -36,7 +36,11 @@ p {
     align-items: flex-end;
     font-size: 1.5em;
     text-transform: uppercase;
-
+    
+    &:hover {
+        text-decoration: none;
+    }
+    
     &__text {
         color: $color-grey-2;
         margin-left: 1.5rem;

@@ -3,6 +3,15 @@
     text-transform: uppercase;
     background: $bg-section;
 
+    &--blue {
+        padding-top: 4rem;
+        background: $bg-contact;
+
+        .contact__h2, .contact__p, .logo__text {
+            color: $white;
+        }
+    }
+
     &__h2 {
         padding-top: 0.25rem;
         margin-bottom: 0.5rem;
