@@ -3,6 +3,7 @@ import 'bootstrap';
 import './styles/main.scss';
 
 import './images/logo.png';
+import './images/hero.png';
 import './images/service_1.png';
 import './images/service_2.png';
 import './images/service_3.png';
@@ -11,5 +12,7 @@ import './images/reference.png';
 import './images/marker.png';
 import './images/mail.png';
 import './images/phone.png';
+import './images/range.png';
 
 import './scripts/carousel';
+import './scripts/hero-form';

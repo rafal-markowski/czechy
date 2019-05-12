@@ -1,4 +1,5 @@
 .reference {
+    position: relative;
     padding: 4rem 0;
     background: $bg-section;
 
@@ -19,47 +20,65 @@
         }
     }
 
-    &__slider {
-        min-height: 300px;
+    &__h3 {
+        text-transform: none;
+        margin-bottom: 0.5rem;
     }
 
-    &__slide {
+    &__slider {
         position: relative;
     }
 
     &__content {
-        padding: 3rem 5rem;
+        padding: 3rem 2.5rem;
         background: $white;
+
+        @include media-up(md) {
+            padding: 3rem 5rem;
+        }
     }
 
     &__arrow {
         position: absolute;
         z-index: 3;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         width: 50px;
         height: 50px;
         background: $bg-purple;
 
-        &--prev {
-            bottom: -25px;
-            left: 15px;
+        @include media-up(lg) {
+            display: flex;
+        }
 
-            @include media-up(lg) {
-                top: calc(50% - 30px);
-                left: calc(100% - 25px);
-            }
+        &--prev, &--next {
+            right: -25px;
+        }
+
+        &--prev {
+            top: calc(50% - 50px);
         }
 
         &--next {
-            bottom: -25px;
-            right: 15px;
+            top: calc(50% + 15px);
+        }
+
+        &--global-prev, &--global-next {
+            display: flex;
+            top: 225px;
 
             @include media-up(lg) {
-                top: calc(50% + 30px);
-                left: calc(100% - 25px);
+                display: none;
             }
+        }
+
+        &--global-prev {
+            left: 0;
+        }
+
+        &--global-next {
+            right: 0;
         }
     }
 

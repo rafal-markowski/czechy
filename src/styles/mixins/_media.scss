@@ -10,7 +10,7 @@
 
 @mixin media-down($name) {
     @if map-has-key($breakpoints, $name) {
-        $down: map-get($breakpoints, $name);
+        $down: map-get($breakpoints, $name) - 1;
 
         @media (max-width: $down) {
             @content;

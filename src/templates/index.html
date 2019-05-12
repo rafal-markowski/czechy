@@ -9,47 +9,76 @@
 <body>
     <!-- start top-nav  -->
 
-    <div class="top-nav">
-        <nav class="top-nav__menu navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <a href="index.html" class="logo navbar-brand">
-                    <img src="images/logo.png" alt="">
-                    <span class="logo__text ml-2 mb-1">plný měšec</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="top-nav__dropdown collapse navbar-collapse bg-white" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mr-lg-3"><a href="#" class="top-nav__link nav-link">jak to funguje</a></li>
-                        <li class="nav-item mr-lg-3"><a href="#" class="top-nav__link nav-link">o nás</a></li>
-                        <li class="nav-item mr-lg-3"><a href="#" class="top-nav__link nav-link">časté dotazy</a></li>
-                        <li class="nav-item"><a href="#" class="top-nav__link nav-link">kontakt</a></li>
-                    </ul>
-                </div>
+    <nav class="top-nav navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a href="index.html" class="logo navbar-brand">
+                <img src="images/logo.png" alt="">
+                <span class="logo__text ml-md-2 mb-1">plný měšec</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="top-nav__dropdown collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="top-nav__menu navbar-nav ml-auto">
+                    <li class="nav-item mr-lg-3"><a href="jak-to-funguje.html" class="top-nav__link">jak to funguje</a></li>
+                    <li class="nav-item mr-lg-3"><a href="o-nas.html" class="top-nav__link">o nás</a></li>
+                    <li class="nav-item mr-lg-3"><a href="caste-dotazy.html" class="top-nav__link">časté dotazy</a></li>
+                    <li class="nav-item"><a href="kontakt.html" class="top-nav__link">kontakt</a></li>
+                </ul>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
 
     <!-- end top-nav -->
 
     <!-- start hero -->
 
-    <section class="hero py-5">
+    <section class="hero">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <form class="hero__form">
+                <div class="col-lg-5">
+                    <form class="hero__form mt-3 mt-lg-0">
+                        <div class="form-group">
+                            <p class="hero__p">
+                                Vyberte castku uveru 
+                                <span class="big">
+                                    <span id="r1-value">2000</span>
+                                    sk
+                                </span>
+                            </p>
+                            <input id="r1" type="range" class="hero__range" min="0" max="4000" value="2000" step="100">
+                            <div class="row small">
+                                <div class="col">0</div>
+                                <div class="col text-center">2000</div>
+                                <div class="col text-right">4000</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p class="hero__p">
+                                Zvolte cas splaceni 
+                                <span class="big">
+                                    <span id="r2-value">16</span>
+                                    m-cy
+                                </span>
+                            </p>
+                            <input id="r2" type="range" class="hero__range" min="0" max="32" step="1" value="16">
+                            <div class="row small">
+                                <div class="col">0</div>
+                                <div class="col text-center">16</div>
+                                <div class="col text-right">32</div>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <input type="submit" class="hero__submit" value="ODESLÁNÍ APLIKACE">
                         </div>
                         <p class="very-small">Curabitur rutrum nibh felis, at condimentum purus luctus id. Vestibulum eu euismod neque. Suspendisse ultricies sed libero id venenatis. Donec aliquam lobortis eleifend. Vestibulum at interdum enim. Fusce volutpat commodo urna. Nulla egestas laoreet pharetra. Integer ac dictum dui. Quisque varius lectus quis metus dictum accumsan.</p>
                     </form>
                 </div>
-                <div class="col-lg-6 order-first order-lg-last">
+                <div class="col-lg-7 order-first order-lg-last">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h1 class="hero__h1">Najlepsi transparentni rychla</h1>
+                            <h1 class="tt-none mb-0">Najlepsi transparentni rychla</h1>
+                            <h2 class="tt-none">pujcka online</h2> 
                             <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit Cras consectetur. Donec et ex et augue.</p>
                         </div>
                     </div>
@@ -112,7 +141,7 @@
                             </div>
                             <div class="reference__content col-lg-6">
                                 <p class="reference__p small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis quam tincidunt, pulvinar nisi accumsan, faucibus ante. Curabitur tempus accumsan mi sed viverra. Integer dignissim fermentum lectus, at imperdiet turpis varius vitae. Suspendisse potenti.</p>
-                                <h3 class="mb-0">Rychlacek Sincopki</h3>
+                                <h3 class="reference__h3">Rychlacek Sincopki</h3>
                                 <span class="reference__span">ucitel z prahy</span>
                             </div>
                         </div>
@@ -131,7 +160,7 @@
                             </div>
                             <div class="reference__content col-lg-6">
                                 <p class="reference__p small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis quam tincidunt, pulvinar nisi accumsan, faucibus ante. Curabitur tempus accumsan mi sed viverra. Integer dignissim fermentum lectus, at imperdiet turpis varius vitae. Suspendisse potenti.</p>
-                                <h3 class="mb-0">Rychlacek Sincopki</h3>
+                                <h3 class="reference__h3">Rychlacek Sincopki</h3>
                                 <span class="reference__span">ucitel z prahy</span>
                             </div>
                         </div>
@@ -150,12 +179,20 @@
                             </div>
                             <div class="reference__content col-lg-6">
                                 <p class="reference__p small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis quam tincidunt, pulvinar nisi accumsan, faucibus ante. Curabitur tempus accumsan mi sed viverra. Integer dignissim fermentum lectus, at imperdiet turpis varius vitae. Suspendisse potenti.</p>
-                                <h3 class="mb-0">Rychlacek Sincopki</h3>
+                                <h3 class="reference__h3">Rychlacek Sincopki</h3>
                                 <span class="reference__span">ucitel z prahy</span>
                             </div>
                         </div>
                     </div>
                 </div>
+                <a class="reference__arrow reference__arrow--global-prev" href="#reference-carousel" role="button"  data-slide="prev">
+                    <span class="reference__icon carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="reference__arrow reference__arrow--global-next" href="#reference-carousel" role="button"  data-slide="next">
+                    <span class="reference__icon carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
     </section>
@@ -171,7 +208,7 @@
                 <span class="logo__text ml-2 mb-1">plný měšec</span>
             </a>
             <div class="row mt-3">
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <h2 class="contact__h2">pronto credit s.r.o</h2>
                     <p class="contact__p small mb-2">rok zalozeni 2007</p>
                     <p class="contact__p small">spolecnosc je zapsana</p>
@@ -179,7 +216,7 @@
                     <p class="contact__p small">mestskym soudem v praze pod</p>
                     <p class="contact__p small">spisovou znackou c 214024</p>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <div class="row">
                         <div class="col-1 pr-4">
                             <img src="images/marker.png" alt="">
@@ -191,23 +228,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="row mb-5">
-                        <div class="col-1 pr-4">
-                            <img src="images/mail.png" alt="">
-                        </div>
-                        <div class="col">
-                            <h2 class="contact__h2">e-mail adresa</h2>
-                            <p class="contact__p small">info@prontopujcka.cz</p>
-                        </div>
-                    </div>
+                <div class="col-lg-4">
                     <div class="row">
-                        <div class="col-1 pr-4">
-                            <img src="images/phone.png" alt="">
+                        <div class="col-md-6 col-lg-12 mb-4 mb-lg-5">
+                            <div class="row">
+                                <div class="col-1 pr-4">
+                                    <img src="images/mail.png" alt="">
+                                </div>
+                                <div class="col">
+                                    <h2 class="contact__h2">e-mail adresa</h2>
+                                    <p class="contact__p small">info@prontopujcka.cz</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col">
-                            <h2 class="contact__h2">telefonni spojeni</h2>
-                            <p class="contact__p small">+420 778 000 002</p>
+                        <div class="col-md-6 col-lg-12">
+                            <div class="row">
+                                <div class="col-1 pr-4">
+                                    <img src="images/phone.png" alt="">
+                                </div>
+                                <div class="col">
+                                    <h2 class="contact__h2">telefonni spojeni</h2>
+                                    <p class="contact__p small">+420 778 000 002</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -227,17 +270,17 @@
                         systém podnikového řízení creditonline &copy;2018
                     </div>
                     <div class="footer__item col-lg-6">
-                        <ul class="list-inline mb-0">
-                            <li class="list-inline-item mr-2 mr-lg-5">
-                                <a class="footer__link pr-2 py-2 pl-0 pl-lg-2" href="#">polityka prywatności</a>
-                            </li>
-                            <li class="list-inline-item mr-2 mr-lg-5">
+                        <div class="row">
+                            <div class="col-md-auto">
+                                <a class="footer__link" href="#">polityka prywatności</a>
+                            </div>
+                            <div class="col-md-auto">
                                 <a class="footer__link" href="#">regulamin</a>
-                            </li>
-                            <li class="list-inline-item">
+                            </div>
+                            <div class="col-md-auto">
                                 <a class="footer__link" href="#">wzór umowy</a>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
