@@ -11,6 +11,11 @@
         padding-bottom: 4rem;
     }
 
+    &--two {
+        padding: 1.5rem 0;
+        background: $bg-bottom-footer-2;
+    }
+
     &__top {
         padding: 1.5rem;
         background: $bg-top-footer;

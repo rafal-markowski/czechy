@@ -27,6 +27,22 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: 'src/templates/index.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'jak-to-funguje',
+            template: 'src/templates/jak-to-funguje.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'o-nas',
+            template: 'src/templates/o-nas.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'registrace',
+            template: 'src/templates/registrace.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'registrace-2',
+            template: 'src/templates/registrace-2.html'
         })
     ],
     module: {

@@ -13,6 +13,7 @@ import './images/marker.png';
 import './images/mail.png';
 import './images/phone.png';
 import './images/range.png';
+import './images/home.png';
 
 import './scripts/carousel';
 import './scripts/hero-form';
