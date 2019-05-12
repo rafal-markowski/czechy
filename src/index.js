@@ -14,6 +14,10 @@ import './images/mail.png';
 import './images/phone.png';
 import './images/range.png';
 import './images/home.png';
+import './images/logo_2.png';
+import './images/marker_2.png';
+import './images/mail_2.png';
+import './images/phone_2.png';
 
 import './scripts/carousel';
 import './scripts/hero-form';
