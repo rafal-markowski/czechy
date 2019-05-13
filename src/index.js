@@ -22,6 +22,9 @@ import './images/peoples.png';
 import './images/o-nas_1.png';
 import './images/o-nas_2.png';
 import './images/o-nas_3.png';
+import './images/jak-to-funguje_1.png';
+import './images/jak-to-funguje_2.png';
+import './images/jak-to-funguje_3.png';
 
 import './scripts/carousel';
 import './scripts/hero-form';

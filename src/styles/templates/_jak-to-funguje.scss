@@ -1,0 +1,70 @@
+.jak-to-funguje {
+    &__img {
+        display: block;
+        margin: 0 auto 1rem;
+
+        @include media-up(lg) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        @include media-up(lg) {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    @include media-up(lg) {
+        &__circle {
+            position: relative;
+    
+    
+            &::after {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                border: 2px solid $dark-blue;
+                content: '';   
+            }
+        }
+
+        &__line {
+            position: relative;
+    
+            &::before {
+                position: absolute;
+                width: 2px;
+                top: calc(15px + 0.5rem);
+                right: 6.5px;
+                bottom: 0;
+                background: $dark-blue;
+                content: '';   
+            }
+        }
+    }
+
+    &__h2 {
+        margin-bottom: 0.5rem;
+        font-size: 1.125em;
+        color: $dark-blue;
+        text-transform: none;
+    }
+
+    &__content {
+        @include media-up(lg) {
+            min-height: 300px;
+            padding-left: 3rem;
+        }
+
+        &--auto {
+            min-height: auto;
+        }
+    }
+}
