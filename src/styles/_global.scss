@@ -81,6 +81,10 @@ label {
     border: none;
     border-radius: 0;
     background: $bg-input;
+
+    &::placeholder {
+        opacity: 0.5;
+    }
 }
 
 .form-row {
