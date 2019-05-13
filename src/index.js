@@ -18,6 +18,10 @@ import './images/logo_2.png';
 import './images/marker_2.png';
 import './images/mail_2.png';
 import './images/phone_2.png';
+import './images/peoples.png';
+import './images/o-nas_1.png';
+import './images/o-nas_2.png';
+import './images/o-nas_3.png';
 
 import './scripts/carousel';
 import './scripts/hero-form';

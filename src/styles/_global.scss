@@ -59,6 +59,9 @@ p {
 .header {
     padding: 3rem 0;
     background: $bg-section;
+    background-image: url('../images/peoples.png');
+    background-repeat: no-repeat;
+    background-position:  right;
 
     &__h1 {
         text-align: center;

@@ -1,0 +1,21 @@
+.o-nas {
+    &__img {
+        display: block;
+        margin: 0 auto 1rem;
+
+        @include media-up(lg) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item {
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        @include media-up(lg) {
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+    }
+} 
