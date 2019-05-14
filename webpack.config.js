@@ -29,19 +29,19 @@ module.exports = {
             template: 'src/templates/index.html'
         }),
         new HtmlWebpackPlugin({
-            filename: 'jak-to-funguje',
+            filename: 'jak-to-funguje.html',
             template: 'src/templates/jak-to-funguje.html'
         }),
         new HtmlWebpackPlugin({
-            filename: 'o-nas',
+            filename: 'o-nas.html',
             template: 'src/templates/o-nas.html'
         }),
         new HtmlWebpackPlugin({
-            filename: 'registrace',
+            filename: 'registrace.html',
             template: 'src/templates/registrace.html'
         }),
         new HtmlWebpackPlugin({
-            filename: 'registrace-2',
+            filename: 'registrace-2.html',
             template: 'src/templates/registrace-2.html'
         })
     ],
