@@ -1,5 +1,0 @@
-@mixin setXY($x: null, $y: null) {
-    display: flex;
-    justify-content: $x;
-    align-items: $y; 
-}
