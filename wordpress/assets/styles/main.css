@@ -183,17 +183,28 @@ label {
 }
 .top-nav__menu > li > a {
   display: block;
-  padding: 2rem 1rem;
+  padding: 2rem 0;
   color: #505050;
   transition: transform .45s ease-in-out;
   will-change: transform;
+}
+@media (min-width: 992px) {
+  .top-nav__menu > li > a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 #menu-item-88 a {
   color: transparent;
   font-size: 1px;
-  background: url("../images/home.png") no-repeat center center;
+  background: url("../images/home.png") no-repeat left center;
   height: 90px;
+}
+@media (min-width: 992px) {
+  #menu-item-88 a {
+    background-position-x: center;
+  }
 }
 
 .hero {
@@ -438,14 +449,17 @@ label {
 }
 .o-nas__item {
   align-items: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 @media (min-width: 992px) {
   .o-nas__item {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
+}
+.o-nas__item:nth-child(2) {
+  background: #fbfaf5;
 }
 
 .jak-to-funguje__img {
