@@ -1,0 +1,26 @@
+.contact {
+    padding-bottom: 4rem;
+    text-transform: uppercase;
+    background: $bg-section;
+
+    &--blue {
+        padding-top: 4rem;
+        background: $bg-contact;
+
+        .contact__h2, .contact__p, .logo__text {
+            color: $white;
+        }
+    }
+
+    &__h2 {
+        padding-top: 0.25rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.4em;
+    }
+
+    &__p {
+        margin-bottom: 0;
+        line-height: 1.4em;
+        color: $color-grey;
+    }
+}

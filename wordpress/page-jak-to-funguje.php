@@ -1,8 +1,8 @@
 <?php 
 /*
-    Theme name: Jak to funguje
+Template Name: Jak to funguje
 */
-get_header('secondary'); ?>
+get_header(); ?>
    <section class="jak-to-funguje">
         <div class="header">
             <div class="container">
@@ -45,4 +45,5 @@ get_header('secondary'); ?>
             </div>
         </div>
     </section>
-<?php get_footer('secondary'); ?>
+<?php create_secondary_contact(); ?>
+<?php get_footer(); ?>

@@ -1,6 +1,6 @@
 <?php 
 /*
-    Theme name: Strona główna
+Template Name: Strona główna
 */
 get_header();?>
     <section class="hero">
@@ -47,8 +47,8 @@ get_header();?>
                 <div class="col-lg-7 order-first order-lg-last">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h1 class="tt-none mb-0">Najlepsi transparentni rychla</h1>
-                            <h2 class="tt-none">pujcka online</h2> 
+                            <h1 class="tt-none mb-0">Nejlepši transparentní rychlá</h1>
+                            <h2 class="tt-none">půjčka online</h2> 
                             <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit Cras consectetur. Donec et ex et augue.</p>
                         </div>
                     </div>
@@ -158,4 +158,5 @@ get_header();?>
             </div>
         </div>
     </section>
+<?php create_primary_contact(); ?>
 <?php get_footer(); ?>

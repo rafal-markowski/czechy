@@ -1,69 +1,37 @@
-    <section class="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                    <a href="index.html" class="logo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="">
-                        <span class="logo__text ml-2">plný měšec</span>
-                    </a>
-                    <h2 class="contact__h2 mt-3">pronto credit s.r.o</h2>
-                    <p class="contact__p small mb-2">rok zalozeni 2007</p>
-                    <p class="contact__p small">spolecnosc je zapsana</p>
-                    <p class="contact__p small">v obchodnim rejstriku vedenem</p>
-                    <p class="contact__p small">mestskym soudem v praze pod</p>
-                    <p class="contact__p small">spisovou znackou c 214024</p>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/marker.png" alt="">
-                    <h2 class="contact__h2 mt-3">sidlo spolecnosti</h2>
-                    <p class="contact__p small">rybna 716/24</p>
-                    <p class="contact__p small">stare mesto</p>
-                    <p class="contact__p small">110 00 praha</p>
-                    <p class="contact__p small">1ic: 275 25 210</p>
-                </div>
-                <div class="col-lg-4">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-12">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mail.png" alt="" class="mt-2">
-                            <h2 class="contact__h2 mt-3">e-mail adresa</h2>
-                            <p class="contact__p small">info@prontopujcka.cz</p>
-                        </div>
-                        <div class="col-md-6 col-lg-12">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/phone.png" alt="" class="mt-3">
-                            <h2 class="contact__h2 mt-3">telefonni spojeni</h2>
-                            <p class="contact__p small">+420 778 000 002</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <footer class="footer">
-        <div class="footer__top">
+    <?php if(is_front_page()): ?>    
+        <footer class="footer">
+            <div class="footer__top">
+    <?php else: ?>
+        <footer class="footer footer--two">
+    <?php endif; ?>
             <div class="container">
                 <div class="row">
                     <div class="footer__item col-lg-6">
                         systém podnikového řízení creditonline &copy;2018
                     </div>
-                    <div class="footer__item col-lg-6 justify-content-end">
-                        <div class="row">
-                            <div class="col-md-auto">
-                                <a class="footer__link" href="#">polityka prywatności</a>
-                            </div>
-                            <div class="col-md-auto">
-                                <a class="footer__link" href="#">regulamin</a>
-                            </div>
-                            <div class="col-md-auto">
-                                <a class="footer__link" href="#">wzór umowy</a>
-                            </div>
-                        </div>
+                    <div class="footer__item col-lg-6 justify-content-lg-end">
+                        <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'footer-menu',
+                                'container' => 'ul',
+                                'menu_class' => 'footer__menu'
+                            ));
+                        ?>
                     </div>
                 </div>
             </div>
+    <?php if(is_front_page()): ?>   
         </div>
+    <?php endif; ?>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <?php if(is_front_page()): ?>
+        <script src="<?php echo get_template_directory_uri(); ?>/assets/scripts/carousel.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/assets/scripts/hero-form.js"></script>
+    <?php endif; ?>
     <?php wp_footer(); ?>
 </body>
 </html>

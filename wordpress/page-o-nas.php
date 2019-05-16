@@ -1,8 +1,8 @@
 <?php 
 /*
-    Theme name: O nas
+Template Name: O nas
 */
-get_header('secondary'); ?>
+get_header(); ?>
     <section class="o-nas">
         <div class="header">
             <div class="container">
@@ -21,7 +21,7 @@ get_header('secondary'); ?>
             </div>
             <div class="o-nas__item row text-lg-right">
                 <div class="col-lg-6">
-                    <h2>lorem ipsum doloret si amet</h2>
+                    <h2>lorem ipsum doloret sit amet</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pellentesque pretium est, vel pharetra enim pretium facilisis. Etiam in venenatis magna. Donec eget dapibus orci.</p>
                 </div>
                 <div class="col-lg-6 order-first order-lg-last">
@@ -39,4 +39,5 @@ get_header('secondary'); ?>
             </div>
         </div>
     </section>
-<?php get_footer('secondary'); ?>
+<?php create_secondary_contact(); ?>
+<?php get_footer(); ?>
